@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/registerFragment">
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.latansa_book.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.latansa_book.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.latansa_book.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/detailBukuFragment"
+        android:name="com.example.latansa_book.DetailBukuFragment"
+        android:label="fragment_detail_buku"
+        tools:layout="@layout/fragment_detail_buku" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.latansa_book.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/tambahBukuFragment"
+        android:name="com.example.latansa_book.TambahBukuFragment"
+        android:label="fragment_tambah_buku"
+        tools:layout="@layout/fragment_tambah_buku" />
+    <fragment
+        android:id="@+id/alarmFragment"
+        android:name="com.example.latansa_book.AlarmFragment"
+        android:label="fragment_alarm"
+        tools:layout="@layout/fragment_alarm" />
+</navigation>
