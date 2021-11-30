@@ -3,36 +3,59 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/registerFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.example.latansa_book.RegisterFragment"
+        android:name="com.example.latansa_book.ui.auth.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.latansa_book.LoginFragment"
+        android:name="com.example.latansa_book.ui.auth.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.latansa_book.HomeFragment"
+        android:name="com.example.latansa_book.ui.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailBukuFragment"
+            app:destination="@id/detailBukuFragment" />
+    </fragment>
     <fragment
         android:id="@+id/detailBukuFragment"
         android:name="com.example.latansa_book.DetailBukuFragment"
         android:label="fragment_detail_buku"
-        tools:layout="@layout/fragment_detail_buku" />
+        tools:layout="@layout/fragment_detail_buku" >
+        <action
+            android:id="@+id/action_detailBukuFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.latansa_book.ProfileFragment"
+        android:name="com.example.latansa_book.ui.profile.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_alarmFragment"
+            app:destination="@id/alarmFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_tambahBukuFragment"
+            app:destination="@id/tambahBukuFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tambahBukuFragment"
-        android:name="com.example.latansa_book.TambahBukuFragment"
+        android:name="com.example.latansa_book.ui.tambah.TambahBukuFragment"
         android:label="fragment_tambah_buku"
         tools:layout="@layout/fragment_tambah_buku" />
     <fragment

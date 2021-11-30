@@ -6,15 +6,17 @@
         android:icon="@drawable/ic_baseline_home_24"
         android:label="Dashboard"
         android:title="DashBoard" />
-    <item
-        android:id="@+id/profileFragment"
-        android:icon="@drawable/ic_baseline_home_24"
-        android:label="Profile"
-        android:title="Profile" />
+
     <item
         android:id="@+id/tambahBukuFragment"
-        android:icon="@drawable/ic_baseline_home_24"
+        android:icon="@drawable/ic_baseline_add_circle_24"
         android:label="Tambah"
         android:title="Tambah" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:label="Profile"
+        android:title="Profile" />
+
 
 </menu>

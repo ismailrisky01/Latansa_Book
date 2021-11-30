@@ -5,91 +5,90 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TambahBukuFragment">
+    tools:context=".ui.tambah.TambahBukuFragment">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/ID_Tambah_ButtonUpload"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="Upload"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintBottom_toTopOf="@+id/ID_Tambah_ButtonSimpan"
+        app:layout_constraintStart_toStartOf="@+id/ID_Tambah_Penerbit"
+        app:layout_constraintTop_toBottomOf="@+id/ID_Tambah_Penerbit" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/ID_Tambah_ButtonSimpan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Simpan"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="@+id/ID_Tambah_ButtonUpload"
+        app:layout_constraintTop_toBottomOf="@+id/ID_Tambah_ButtonUpload" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/ID_Tambah_Pengarang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Pengarang"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintBottom_toTopOf="@+id/ID_Tambah_TahunTerbit"
+        app:layout_constraintStart_toStartOf="@+id/ID_Tambah_Kategori"
+        app:layout_constraintTop_toBottomOf="@+id/ID_Tambah_Kategori" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/ID_Tambah_TahunTerbit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Tahun Terbit"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintBottom_toTopOf="@+id/ID_Tambah_Penerbit"
+        app:layout_constraintStart_toStartOf="@+id/ID_Tambah_Pengarang"
+        app:layout_constraintTop_toBottomOf="@+id/ID_Tambah_Pengarang" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/ID_Tambah_Judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Judul"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ID_Tambah_Kategori"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/ID_Tambah_Kategori"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Kategori"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintBottom_toTopOf="@+id/ID_Tambah_Pengarang"
+        app:layout_constraintStart_toStartOf="@+id/ID_Tambah_Judul"
+        app:layout_constraintTop_toBottomOf="@+id/ID_Tambah_Judul" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/ID_Tambah_txtLokasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:maxLength="10"
         android:text="Lokasi"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button" />
+        app:layout_constraintBottom_toBottomOf="@+id/ID_Tambah_ButtonUpload"
+        app:layout_constraintStart_toEndOf="@+id/ID_Tambah_ButtonUpload"
+        app:layout_constraintTop_toTopOf="@+id/ID_Tambah_ButtonUpload" />
+
+    <EditText
+        android:id="@+id/ID_Tambah_Penerbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="penerbit"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ID_Tambah_ButtonUpload"
+        app:layout_constraintStart_toStartOf="@+id/ID_Tambah_TahunTerbit"
+        app:layout_constraintTop_toBottomOf="@+id/ID_Tambah_TahunTerbit" />
 </androidx.constraintlayout.widget.ConstraintLayout>
